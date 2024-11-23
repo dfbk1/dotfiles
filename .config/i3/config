@@ -178,3 +178,7 @@ hide_edge_borders smart
 gaps inner 5px
 gaps outer 0px
 smart_gaps on
+
+for_window [class="ttrm"] floating enable, resize set 1400 800, move scratchpad, border pixel 0
+bindsym $mod+t [class="ttrm"] scratchpad show; move position center
+exec_always --no-startup-id pgrep -f '^kitty --class ttrm,ttrm' || kitty --class ttrm,ttrm
